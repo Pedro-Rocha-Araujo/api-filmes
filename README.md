@@ -3,4 +3,3 @@
 * HTML5 | CSS3
 * ReactJs
 * Api: https://developer.themoviedb.org/docs/getting-started
-### Segue o link para acesso no github pages: 
