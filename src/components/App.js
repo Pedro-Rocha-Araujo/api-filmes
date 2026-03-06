@@ -1,10 +1,12 @@
-
+import Header from "./Header"
+import RoutesApp from "./Routes"
 
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <div>
+      <Header />
+      <RoutesApp />
+    </div>
   );
 }
 
