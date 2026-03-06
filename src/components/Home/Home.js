@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import {Link} from "react-router-dom"
 
 function Home() {
   const [filmes, setFilmes] = useState([])  
@@ -30,7 +31,7 @@ function Home() {
 
             </div>
             <p>{_.overview}</p>
-            <button>Detalhes</button>
+            <Link to={`/detalhes/${_.id}`}>Detalhes</Link>
           </section>
         )
       })}
