@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react"
 import {useParams, Link, useNavigate} from "react-router-dom"
 
-function Detalhes() {
-  const [detalhes, setDetalhes] = useState([])
+function Detalhes(props) {
+  const [detalhes, setDetalhes] = useState({})
   const {id} = useParams()
   const navigate = useNavigate()
 
@@ -22,16 +22,14 @@ function Detalhes() {
       return
     })
   }, [navigate, link])
+
   return (
     <div>
       <section>
           <h3>{detalhes.title}</h3>
           <img src={`https://image.tmdb.org/t/p/original/${detalhes.poster_path}`} />
           <div className="infos">
-            <div className="botoes">
-              <a target="_blank" href={detalhes.homepage}>Trailer</a>
-              <Link>Salvar</Link>
-            </div>
+            <a className="btn-pequeno" target="blank" href={`https://www.youtube.com/results?search_query=${detalhes.title} trailer`}>Trailer</a>
             <span><i class="fa-solid fa-star"></i> {detalhes.vote_average}</span>
           </div>
           <p>{detalhes.overview}</p>

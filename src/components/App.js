@@ -1,11 +1,13 @@
 import Header from "./Header"
 import RoutesApp from "./Routes"
+import Footer from "./Footer"
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
       <RoutesApp />
+      <Footer />
     </div>
   );
 }
