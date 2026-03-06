@@ -82,6 +82,18 @@ button:hover {
   background-color: rgb(43, 39, 39);
 }
 
+p.warning{
+  background-color: #ff5858;
+  color: #fff ;
+  font-size: clamp(1.1rem, 6vw, 2rem);
+  padding: 1rem;
+  text-align: center;
+  width: 98%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 2rem;
+}
+
 @media screen and (max-width: 880px) {
   div.flex{
     flex-direction: column;
