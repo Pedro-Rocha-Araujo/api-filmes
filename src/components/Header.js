@@ -1,7 +1,8 @@
 function Header() {
     return(
         <header>
-            <h1>API - Filmes</h1>
+            <h1><a href="/">API - Filmes </a></h1>
+            <a href="/carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
         </header>
     )
 }
