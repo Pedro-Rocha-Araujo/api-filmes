@@ -27,7 +27,7 @@ function Home() {
           <section key={i}>
             <div className="flex">
             <h3>{_.title}</h3>
-            <img src={`https://image.tmdb.org/t/p/original/${_.poster_path}`} />
+            <img src={`https://image.tmdb.org/t/p/original/${_.poster_path}`} alt="Poster do filme em questão" />
 
             </div>
             <p>{_.overview}</p>

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import {useParams, Link, useNavigate} from "react-router-dom"
+import {useParams, useNavigate} from "react-router-dom"
 
 function Detalhes(props) {
   const [detalhes, setDetalhes] = useState({})
@@ -27,7 +27,7 @@ function Detalhes(props) {
     <div>
       <section>
           <h3>{detalhes.title}</h3>
-          <img src={`https://image.tmdb.org/t/p/original/${detalhes.poster_path}`} />
+          <img src={`https://image.tmdb.org/t/p/original/${detalhes.poster_path}`} alt="Poster do filme em questão" />
           <div className="infos">
             <a className="btn-pequeno" target="blank" href={`https://www.youtube.com/results?search_query=${detalhes.title} trailer`}>Trailer</a>
             <span><i class="fa-solid fa-star"></i> {detalhes.vote_average}</span>
