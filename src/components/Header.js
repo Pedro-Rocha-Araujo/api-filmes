@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Header() {
     return(
         <header>
-            <h1><a href="/">API - Filmes </a></h1>
+            <h1><Link href={"/"}>API - Filmes </Link></h1>
         </header>
     )
 }
