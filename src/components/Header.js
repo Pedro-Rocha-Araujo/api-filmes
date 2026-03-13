@@ -1,7 +1,7 @@
 function Header() {
     return(
         <header>
-            <h1><a href="/">API - Filmes </a></h1>
+            <h1><a href={"/"}>API - Filmes </a></h1>
         </header>
     )
 }
